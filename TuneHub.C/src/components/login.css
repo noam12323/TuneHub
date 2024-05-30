@@ -1,0 +1,26 @@
+.form-container {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .form-field {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .success-message {
+    color: #FFA500;
+  }
+  
+  #email-error, #password-error {
+    color: red;
+    font-size: 12px;
+  }
+  

@@ -1,0 +1,22 @@
+.song-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+  }
+  
+  .song-item {
+    color: #FFA500;
+    background-color: #ffffff;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    width: calc(20% - 10px); /* 5 items per row */
+    text-align: center;
+    font-size: 18px;
+  }
+  
+  .song-item:hover {
+    background-color: darkorange;
+    cursor: pointer;
+  }
+  
