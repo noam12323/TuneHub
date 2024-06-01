@@ -7,9 +7,11 @@ import AudioStreamer from './AudioStreamer';
 import "react-toastify/dist/ReactToastify.css";
 import './songList.css';
 
-export default function SongList() {
+export default function SongList({search}) {
   const [songs, setSongs] = useState([]);
   const [selectedSong,setSelectedSong] = useState(null);
+  console.log(search);
+  const songsToShow = songs.filter((song)=>song.includes(search))
 
   useEffect(() => {
     fetchSongs();
@@ -31,7 +33,7 @@ export default function SongList() {
   return (
     <>
     <div className="song-list">
-      {songs.map((song, i) => {
+      {songsToShow.map((song, i) => {
         return <Song key={i} name={song} setSelectedSong={setSelectedSong} className="song-item" />;
       })}
       <br/>
